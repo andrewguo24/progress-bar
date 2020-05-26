@@ -1,0 +1,20 @@
+.App {
+  margin: 0;
+}
+
+.App-header {
+  text-align: center;
+}
+
+.limit {
+  text-align: center;
+}
+
+.select-buttons-wrapper {
+  text-align: center;
+}
+
+.loading {
+  margin-top: 32px;
+  text-align: center;
+}
