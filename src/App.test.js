@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import App from "./App";
 import Bars from "./components/Bar";
 import BarSelect from "./components/BarSelect";
@@ -32,6 +32,10 @@ describe("page already loaded data from API", () => {
   });
   test("render header", () => {
     const appComponent = wrapper.find(".App-header");
+    expect(appComponent.length).toBe(1);
+  });
+  test("render limit", () => {
+    const appComponent = wrapper.find(".limit");
     expect(appComponent.length).toBe(1);
   });
   test("render progress bars component", () => {

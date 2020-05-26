@@ -18,7 +18,6 @@
   background: lightblue;
   text-align: center;
   transition: width 0.5s ease-in-out;
-  transition-delay: 0.2s;
 }
 
 .progress-number {

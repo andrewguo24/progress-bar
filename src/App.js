@@ -47,9 +47,7 @@ export default class App extends React.Component {
   };
 
   render() {
-    const { data, isLoading, selectedBar, isProgressChanged } = this.state;
-    console.log("data", data);
-    console.log("isProgressChanged", isProgressChanged);
+    const { data, isLoading, selectedBar } = this.state;
     return (
       <div className="App">
         {isLoading ? (
@@ -58,7 +56,7 @@ export default class App extends React.Component {
           <div>
             <h1 className="App-header">Progress Bar</h1>
             <h4 className="limit">Limit: {data && data.limit}</h4>
-            <Bars data={data} isProgressChanged={isProgressChanged} />
+            <Bars data={data} />
             <div className="select-buttons-wrapper">
               <BarSelect
                 value={selectedBar}
